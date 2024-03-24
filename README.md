@@ -13,11 +13,16 @@ This project focuses on implementing a system to manage and verify Electronic Me
 ### Part 2: Blocks
 - Develop code to validate blocks containing multiple EMRs.
 - Implement classes for managing user states and blocks within a blockchain-inspired architecture.
+
+### Part 3: Mining
+- Implement a block mining function that produces blocks with valid proof of work.
+- Optimize the mining process using parallel processing techniques.
 - Explore advanced techniques to improve the efficiency of block mining.
 
 ## Requirements
 - Python 3
 - `pyca/cryptography` library for cryptographic operations.
+- `multiprocessing` module for parallel processing in mining optimization.
 
 ## Implementation Details
 
@@ -27,6 +32,11 @@ This project focuses on implementing a system to manage and verify Electronic Me
 ### Block and UserState Classes
 - Manage blockchain-like structures to hold and validate EMRs.
 - Track user states across blocks for consistency and integrity.
+
+### Mining
+- Implement a `mine_block` function to produce blocks with valid proof of work.
+- Optimize mining using parallel processing with `multiprocessing` module.
+- Distribute mining work among multiple processes to improve efficiency.
 
 ## Testing
 - Includes comprehensive test cases for validation and error handling.
